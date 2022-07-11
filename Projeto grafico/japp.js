@@ -10,7 +10,7 @@ btEnviar.addEventListener('click', function () {
 });
 
 
-function am() {
+function processamentoDados() {
 
     let qtdOne = document.getElementById('qtdOne');
     let qtdTwo = document.getElementById('qtdOne');
@@ -31,15 +31,16 @@ function am() {
 
     let colunaJan = document.getElementById('j-bar');
     let colunaFev = document.getElementById('f-bar');
+    let colunaMar = document.getElementById('m-bar');
 
     if (qtdJan == 10) {
-        colunaJan.style.height = '200px';
-    } else if (numeroH == 10) {
-        colunadois.style.height = '100px';
-    } else if (numThree == 10) {
-        colunatres.style.height = '100px';
+        colunaJan.style.height = '40px';
+    } else if (qtdFev == 10) {
+        colunaFev.style.height = '40px';
+    } else if(qtdMar == 10){
+        colunaMar.style.height = '40px';
     }
-
+/*
     if (numeroM == 20) {
         coluna.style.height = '200px';
     } else if (numeroH == 20) {
@@ -54,8 +55,8 @@ function am() {
         colunadois.style.height = '300px';
     } else if (numThree == 30) {
         colunatres.style.height = '300px';
-    }
-    se(numeroM, numeroH, numThree);
+    }*/
+    se(qtdJan, qtdFev, qtdMar);
 }
 
 function se(y, z, j) {
