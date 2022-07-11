@@ -31,6 +31,7 @@ body{
     border: solid 1px #cecece;
 }
 .all-gafico-content{
+    width: 100%;
     display: grid;
     grid-template-areas: 
     'header header'
@@ -46,7 +47,7 @@ body{
 .grafico-content{
     grid-area: content;
     background: #c7ddc7;
-    min-height: 180px;
+    min-height: 210px;
     display: flex;
     align-items: flex-end;
 } 
@@ -68,10 +69,10 @@ body{
 .numeros {
     width: 100%;
     text-align: center;
-    display: block;
-    justify-content: space-around;
-    border: solid 1px black;
     height: 24vh;
+}
+.numeros p{
+    margin: 10px 0 15px;
 }
 .cidades{
     display: flex;
