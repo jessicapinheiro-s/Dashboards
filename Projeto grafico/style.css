@@ -26,12 +26,17 @@ body{
     width: 20%;
     margin-bottom: 10px;
 }
-.form .sexo, .form .inCidades, .form .qtd{
+.form .mes, .form .qtd{
     width: 30%;
     text-align: center;
     border: 1px solid #131010;
 }
-
+.form .qtd input{
+    width: 40px;
+}
+.form .mes input{
+    width: 60px;
+}
 .formulario.esconder{
     display: none;
 }
