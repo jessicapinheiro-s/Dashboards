@@ -18,6 +18,11 @@ body{
 .grafico.mostrar{
     display: block;
 }
+.grafico{
+    padding: 20px;
+    border-radius: 6px;
+    border: solid 1px #cecece;
+}
 .all-gafico-content{
     display: grid;
     grid-template-areas: 
@@ -26,4 +31,16 @@ body{
     'footer footer';
     grid-template-columns: 80px 1fr;
     grid-template-rows: 100px 1fr 60px;
+}
+.grafico-aside{
+    grid-area: aside;
+} 
+.grafico-content{
+    grid-area: content;
+} 
+.grafico-footer {
+    grid-area: footer;
+}
+.grafico-header{
+    grid-area: header;
 }
