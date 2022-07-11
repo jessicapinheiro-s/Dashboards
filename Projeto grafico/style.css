@@ -47,10 +47,14 @@ body{
     grid-area: content;
     background: #c7ddc7;
     min-height: 180px;
+    display: flex;
+    align-items: flex-end;
 } 
 .grafico-footer {
     grid-area: footer;
     background: #ada0b9;
+    display: flex;
+    align-items: center;
 }
 .grafico-header{
     grid-area: header;
@@ -66,12 +70,17 @@ body{
     align-items: center;
     width: 100%;
     justify-content: space-around;
+    border: solid 1px black;
+}
+.cidades span{
+    border: solid 1px black;
+    width: 120px;
+    text-align: center;
 }
 .colunas-grafico{
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: space-around;
-    align-items: flex-start;
     border: solid 1px black;
 }
 .barra{
