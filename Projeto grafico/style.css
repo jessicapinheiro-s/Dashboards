@@ -13,13 +13,25 @@ body{
     padding: 15px;
     border: 1px solid #cacaca;
 }
+.formulario .bt{
+    text-align: center;
+    margin-top: 15px;
+}
 .form{
     width: 80%;
     margin: auto;
+    display: flex;
 }
 .form input{
+    width: 20%;
     margin-bottom: 10px;
 }
+.form .sexo, .form .inCidades, .form .qtd{
+    width: 30%;
+    text-align: center;
+    border: 1px solid #131010;
+}
+
 .formulario.esconder{
     display: none;
 }
@@ -27,7 +39,7 @@ body{
     display: block;
 }
 .grafico{
-    width:90% ;
+    width:60% ;
     display: none;
     margin: auto;
     padding: 20px;
@@ -76,7 +88,7 @@ body{
     height: 24vh;
 }
 .numeros p{
-    margin: 10px 0 15px;
+    margin: 15px 0 15px;
 }
 .cidades{
     display: flex;
