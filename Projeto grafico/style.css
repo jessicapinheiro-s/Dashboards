@@ -65,8 +65,13 @@ body{
     margin: auto;
     text-align: center;
 }
-.numeros{
-    
+.numeros {
+    width: 100%;
+    text-align: center;
+    display: block;
+    justify-content: space-around;
+    border: solid 1px black;
+    height: 24vh;
 }
 .cidades{
     display: flex;
