@@ -58,3 +58,12 @@ body{
     width: 100%;
     justify-content: space-around;
 }
+.colunas-grafico{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.barra{
+    display: flex;
+}
