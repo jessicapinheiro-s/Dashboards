@@ -18,3 +18,12 @@ body{
 .grafico.mostrar{
     display: block;
 }
+.all-gafico-content{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'aside content'
+    'footer footer';
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 100px 1fr 60px;
+}
