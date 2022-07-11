@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-dark-body: #18191a;
+    --bg-nav-superior: #242526;
+    --font-color: #e4e6eb;
+    --bg-cards: #3a3b3c;
+    --color-icons: #b0b3b8;
+    --borda: rgba(255, 255, 255, 0.5);
+    --cor-bt-goiaba: #ff7f50;
+}
+body {
+    height: 100%;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-dark-body);
+    font-size: 0.975rem;
+}
+.dashboard {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:
+        'menu superiorNav'
+        'menu infoBox'
+        'menu  painelDados'
+    ;
+    grid-template-columns:
+        280px 1fr;
+
+    grid-template-rows: 80px 230px 1fr;
+}
+.menu {
+    grid-area: menu;
+    background: var(--bg-nav-superior);
+    padding: 20px;
+}
+.btSearch{
+    background: transparent;
+    font-size: 15px;
+}
+.notifications i, .user i{
+    font-size: 25px;
+}
+.menu  div{
+    margin: 0 0 30px;
+}
+.menuList  .itemMenu{
+    padding: 15px;
+}
+.itemMenu{
+    border-radius: 5px ;
+    border: transparent;
+}
+.menuList  .itemMenu:hover, .menuList  .itemMenu:focus, .btAdd-now, .infoBox-box ,.bt-ver-pedido {
+    background: var(--cor-bt-goiaba);
+}
+.btAdd-now:hover, .bt-ver-pedido:hover{
+    background: #ff9a75;
+
+}
+.superiorNav {
+    grid-area: superiorNav;
+    background: var(--bg-nav-superior);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    align-items: center;
+}
+.contentSuperior-nav{
+    display: flex;
+    align-items: center;
+}
+.contentSuperior-nav div{
+    margin: 0 30px 0 30px;
+    color: var(--color-icons);
+}
+.search-bar {
+    display: flex;
+}
+.btAdd-now{
+    border-radius: 5px ;
+    border: transparent;
+    cursor: pointer;
+    padding: 10px;
+}
+.search-bar input {
+    height: 30px;
+    width: 400px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.search-bar input::placeholder, .itemMenu i, .btSearch, .search-bar input, .menu,.infoBox-box,.btAdd-now,.Novospedidos, .novosAssinantes, .bt-ver-pedido {
+    color: var(--font-color);
+}
+.search-bar button {
+    padding: 8px;
+    height: 30px;
+    border: none;
+}
+.painelDados {
+    display: flex;
+    grid-area: painelDados;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+.Novospedidos, .novosAssinantes{
+    width: 50%;
+    background: var(--bg-cards);
+    border-radius: 8px 8px 0px 0px;
+    padding: 15px 0;
+}
+.novosAssinantes{
+    width: 45%;
+}
+.Novospedidos table, .novosAssinantes table{
+    width: 90%;
+    margin: auto;
+}
+.infoBox {
+    grid-area: infoBox;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+.infoBox-box {
+    display: block;
+    width: 180px;
+    text-align: center;
+    height: 150px;
+    margin: 0 30px 0 45px;
+    border-radius: 8px;
+    padding: 15px;
+}
+.all-infoBox-box{
+    display: flex;
+    width: 98%;
+    margin: auto;
+}
+.infoBox-box:hover{
+    transform: scale(1.1);
+    transition: transform.3s ease;
+}
+.infoBox-box i{
+    width: 100%;
+    font-size: 36px;
+}
+.infoBox-box span{
+    width: 100%;
+    font-weight: 100;
+}
+.infoBox-box .vendas{
+    font-size: 30px;
+    font-weight: 700;
+}
+table {
+    border: 1px;
+    margin-top: 30px;
+    border-collapse:collapse;
+}
+thead, tbody, .search-bar{
+    border-bottom: 1px solid var(--borda);
+}
+thead{
+    height: 40px;
+}
+td{
+    width: 80px;
+    padding: 10px;
+    text-align: center;
+    height: 30px;
+}
+.bt-ver-pedido{
+    border: none;
+    padding: 8px;
+    border-radius: 5px ;
+    border: transparent;
+}

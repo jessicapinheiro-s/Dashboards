@@ -1,0 +1,58 @@
+body{ 
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.formulario{
+    width: 400px;
+    margin: auto ;
+    border: 1px solid #cacaca;
+}
+.formulario.esconder{
+    display: none;
+}
+.grafico{
+    display: none;
+}
+.grafico.mostrar{
+    display: block;
+}
+.box{
+    margin: 0 auto;
+    max-width: 800px;
+    align-items: flex-end;
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    top: 23%;
+    left: 25%;
+}
+.col-1, .col-2, .col-3{
+    background: #123;
+    width: 67px;
+    margin: 0px 10px 0px 5px;
+}
+.col-2{
+    background: rgb(81, 28, 150);
+}
+
+.col-3{
+    background: rgb(179, 216, 13);
+}
+table{
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    border: 1px solid #cacaca;
+    border-collapse: collapse;
+    position: relative;
+}
+
+tr, td{
+    width: 60px;
+    height: 100px;
+}
+tr{
+    border-bottom: 1px solid #cacaca;
+}
