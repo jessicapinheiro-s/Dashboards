@@ -10,7 +10,15 @@ body{
 .formulario{
     width: 400px;
     margin: auto ;
+    padding: 15px;
     border: 1px solid #cacaca;
+}
+.form{
+    width: 80%;
+    margin: auto;
+}
+.form input{
+    margin-bottom: 10px;
 }
 .formulario.esconder{
     display: none;
