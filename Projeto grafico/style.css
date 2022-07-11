@@ -44,3 +44,9 @@ body{
 .grafico-header{
     grid-area: header;
 }
+.cidades{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
