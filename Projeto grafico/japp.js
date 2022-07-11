@@ -10,7 +10,7 @@ btEnviar.addEventListener('click', function () {
 });
 
 
-function processamentoDados() {
+function coletaDados() {
 
     let qtdOne = document.getElementById('qtdOne');
     let qtdTwo = document.getElementById('qtdOne');
@@ -29,10 +29,10 @@ function processamentoDados() {
     let qtdJun = Number(qtdSix.value);
     let qtdJul = Number(qtdSeven.value);
 
-    se(qtdJan, qtdFev, qtdMar);
+    processamento(qtdJan, qtdFev, qtdMar);
 }
 
-function se(y, z, j) {
+function processamento(y, z, j) {
     let colunaJan = document.getElementById('j-bar');
     let colunaFev = document.getElementById('f-bar');
     let colunaMar = document.getElementById('m-bar');

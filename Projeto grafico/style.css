@@ -87,6 +87,9 @@ body{
     margin: auto;
     text-align: center;
 }
+.qtd input{
+    margin-bottom: 18px;
+}
 .numeros {
     width: 100%;
     text-align: center;
