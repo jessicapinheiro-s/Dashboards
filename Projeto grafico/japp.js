@@ -11,19 +11,19 @@ btEnviar.addEventListener('click', function () {
 
 
 function am() {
-    let homensNum = document.getElementById('homensNum');
-    let mulheresNum = document.getElementById('mulheresNum');
+    let inMesOne = document.getElementById('inMesOne');
+    let qtdOne = document.getElementById('qtdOne');
 
-    let numeroM = Number(homensNum.value);
-    let numeroH = Number(mulheresNum.value);
+    let inJan = Number(inMesOne.value);
+    let qtdJan = Number(qtdOne.value);
 
     let numThree = 30;
-    let coluna = document.getElementById('col');
+    let colunaJan = document.getElementById('j-bar');
     let colunadois = document.getElementById('colTwo');
     let colunatres = document.getElementById('colThree');
 
-    if (numeroM == 10) {
-        coluna.style.height = '100px';
+    if (qtdJan == 10) {
+        colunaJan.style.height = '100px';
     } else if (numeroH == 10) {
         colunadois.style.height = '100px';
     } else if (numThree == 10) {
