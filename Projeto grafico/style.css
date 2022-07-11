@@ -113,13 +113,8 @@ body{
 .barra{
     display: flex;
 }
-.f-bar, .m-bar{
+#j-bar, #f-bar, .m-bar, .a-bar, .mai-bar, .jun-bar, .jul-bar, .ag-bar{
     width: 30px;
     color: transparent;
-}
-.j-bar{
-    background: #123;
-}
-.m-bar{
     background: rgb(16, 99, 182);
 }

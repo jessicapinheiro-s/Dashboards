@@ -11,19 +11,29 @@ btEnviar.addEventListener('click', function () {
 
 
 function am() {
-    let inMesOne = document.getElementById('inMesOne');
+
     let qtdOne = document.getElementById('qtdOne');
+    let qtdTwo = document.getElementById('qtdOne');
+    let qtdThree = document.getElementById('qtdOne');
+    let qtdFour = document.getElementById('qtdOne');
+    let qtdFive = document.getElementById('qtdOne');
+    let qtdSix = document.getElementById('qtdOne');
+    let qtdSeven = document.getElementById('qtdOne');
 
-    let inJan = Number(inMesOne.value);
+
     let qtdJan = Number(qtdOne.value);
+    let qtdFev = Number(qtdTwo.value);
+    let qtdMar = Number(qtdThree.value);
+    let qtdAbr = Number(qtdFour.value);
+    let qtdMai = Number(qtdFive.value);
+    let qtdJun = Number(qtdSix.value);
+    let qtdJul = Number(qtdSeven.value);
 
-    let numThree = 30;
     let colunaJan = document.getElementById('j-bar');
-    let colunadois = document.getElementById('colTwo');
-    let colunatres = document.getElementById('colThree');
+    let colunaFev = document.getElementById('f-bar');
 
     if (qtdJan == 10) {
-        colunaJan.style.height = '100px';
+        colunaJan.style.height = '200px';
     } else if (numeroH == 10) {
         colunadois.style.height = '100px';
     } else if (numThree == 10) {
