@@ -44,6 +44,11 @@ body{
 .grafico-header{
     grid-area: header;
 }
+.title{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
 .cidades{
     display: flex;
     align-items: center;
