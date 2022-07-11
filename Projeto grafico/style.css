@@ -35,7 +35,7 @@ body{
     grid-template-areas: 
     'header header'
     'aside content'
-    'footer footer';
+    'aside footer';
     grid-template-columns: 80px 1fr;
     grid-template-rows: 100px 1fr 60px;
 }
@@ -46,6 +46,7 @@ body{
 .grafico-content{
     grid-area: content;
     background: #c7ddc7;
+    min-height: 180px;
 } 
 .grafico-footer {
     grid-area: footer;
@@ -71,7 +72,18 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    border: solid 1px black;
 }
 .barra{
     display: flex;
+}
+.f-bar, .m-bar{
+    width: 30px;
+    color: transparent;
+}
+.f-bar{
+    background: #123;
+}
+.m-bar{
+    background: rgb(16, 99, 182);
 }
