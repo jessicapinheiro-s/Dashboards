@@ -117,7 +117,7 @@ body{
 .barra{
     display: flex;
 }
-#j-bar, #f-bar, #m-bar, .a-bar, .mai-bar, .jun-bar, .jul-bar, .ag-bar{
+#j-bar, #f-bar, #m-bar, #a-bar, #mai-bar, #jun-bar, #jul-bar, #ag-bar, #set-bar, #out-bar, #nov-bar, #dez-bar{
     width: 30px;
     height: 20px;
     color: transparent;
