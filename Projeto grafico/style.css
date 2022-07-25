@@ -68,7 +68,7 @@ body{
 .grafico-content{
     grid-area: content;
     background: #c7ddc7;
-    min-height: 210px;
+    min-height: 275px;
     display: flex;
     align-items: flex-end;
 } 
@@ -119,7 +119,8 @@ body{
 }
 #j-bar, #f-bar, #m-bar, #a-bar, #mai-bar, #jun-bar, #jul-bar, #ag-bar, #set-bar, #out-bar, #nov-bar, #dez-bar{
     width: 30px;
-    height: 20px;
+    height: 10px;
     color: transparent;
     background: rgb(16, 99, 182);
 }
+
