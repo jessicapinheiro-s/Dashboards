@@ -20,38 +20,31 @@ document.getElementById('btEnviar').addEventListener('click', function coletaDad
             alert('Os campos vazios valerão 0 ..');
             return;
         }
-        let colunas = document.querySelectorAll('[id *=bar]');
 
-        if (Number(qtds[i].value <= 10)) {
+        let colunas = document.querySelectorAll('[class *=barCol]');
+
+        if (Number(qtds[i].value > 0 && Number(qtds[i].value <= 10))) {
             colunas[i].classList.add("colTamDez");
-
-        } else if (Number(qtds[i].value <= 25)) {
-            document.getElementById('j-bar').style.height = '30px';
-            document.getElementById('f-bar').style.height = '20px';
-            document.getElementById('m-bar').style.height = '20px';
-            document.getElementById('a-bar').style.height = '20px';
-            document.getElementById('mai-bar').style.height = '20px';
-            document.getElementById('jun-bar').style.height = '20px';
-        } else if (Number(qtds[i].value) <= 50) {
-            document.getElementById('j-bar').style.height = '40px';
-            document.getElementById('f-bar').style.height = '40px';
-            document.getElementById('m-bar').style.height = '40px';
-            document.getElementById('a-bar').style.height = '40px';
-            document.getElementById('mai-bar').style.height = '40px';
-            document.getElementById('jun-bar').style.height = '40px';
-        } else if (Number(qtds[i].value) <= 100) {
-            document.getElementById('j-bar').style.height = '80px';
-            document.getElementById('f-bar').style.height = '80px';
-            document.getElementById('m-bar').style.height = '80px';
-            document.getElementById('a-bar').style.height = '80px';
-            document.getElementById('mai-bar').style.height = '80px';
-            document.getElementById('jun-bar').style.height = '80px';
+        } else if (Number(qtds[i].value > 10 && Number(qtds[i].value <= 25))) {
+            colunas[i].classList.add("colTamVin");
+        } else if (Number(qtds[i].value) > 25 && Number(qtds[i].value <= 50)) {
+            colunas[i].classList.add("colTamCin");
+        } else if (Number(qtds[i].value) > 50 && Number(qtds[i].value <= 100)) {
+            colunas[i].classList.add("colTamCem");
+        } else if (Number(qtds[i].value) > 100 && Number(qtds[i].value <= 200)) {
+            colunas[i].classList.add("colTamDuz");
+        } else if (Number(qtds[i].value) > 200 && Number(qtds[i].value <= 300)) {
+            colunas[i].classList.add("colTamTre");
+        } else if (Number(qtds[i].value) > 300 && Number(qtds[i].value <= 400)) {
+            colunas[i].classList.add("colTamQua");
+        } else if (Number(qtds[i].value) > 400 && Number(qtds[i].value <= 500)) {
+            colunas[i].classList.add("colTamQui");
         }
 
 
     }
 
-    alert(soma);
+
 })
 
 

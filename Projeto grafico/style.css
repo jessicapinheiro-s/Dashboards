@@ -68,7 +68,7 @@ body{
 .grafico-content{
     grid-area: content;
     background: #c7ddc7;
-    min-height: 275px;
+    min-height: 220px;
     display: flex;
     align-items: flex-end;
 } 
@@ -117,13 +117,35 @@ body{
 .barra{
     display: flex;
 }
-.j-bar, #f-bar, #m-bar, #a-bar, #mai-bar, #jun-bar{
+.j-barCol, .f-barCol, .m-barCol, .a-barCol, .mai-barCol, .jun-barCol{
     width: 30px;
-    height: 10px;
+    height: 3px;
     color: transparent;
-    background: rgb(16, 99, 182);
+    background: #1063b6;
 }
-.j-bar.colTamDez, #f-bar.colTamDez, #m-bar.colTamDez, #a-bar.colTamDez, #mai-bar.colTamDez, #jun-bar.colTamDez{
-    height: 50px;
+.j-barCol.colTamDez, .f-barCol.colTamDez, .m-barCol.colTamDez, .a-barCol.colTamDez, .mai-barCol.colTamDez, .jun-barCol.colTamDez{
+    height: 6px;
 }
+.j-barCol.colTamVin, .f-barCol.colTamVin, .m-barCol.colTamVin, .a-barCol.colTamVin, .mai-barCol.colTamVin, .jun-barCol.colTamVin{
+    height: 12px;
+}
+.j-barCol.colTamCin, .f-barCol.colTamCin, .m-barCol.colTamCin, .a-barCol.colTamCin, .mai-barCol.colTamCin, .jun-barCol.colTamCin{
+    height: 22px;
+}
+.j-barCol.colTamCem, .f-barCol.colTamCem, .m-barCol.colTamCem, .a-barCol.colTamCem, .mai-barCol.colTamCem, .jun-barCol.colTamCem{
+    height: 60px;
+}
+.j-barCol.colTamDuz, .f-barCol.colTamDuz, .m-barCol.colTamDuz, .a-barCol.colTamDuz, .mai-barCol.colTamDuz, .jun-barCol.colTamDuz{
+    height: 90px;
+}
+.j-barCol.colTamTre, .f-barCol.colTamTre, .m-barCol.colTamTre, .a-barCol.colTamTre, .mai-barCol.colTamTre, .jun-barCol.colTamTre{
+    height: 130px;
+}
+.j-barCol.colTamQua, .f-barCol.colTamQua, .m-barCol.colTamQua, .a-barCol.colTamQua, .mai-barCol.colTamQua, .jun-barCol.colTamQua{
+    height: 160px;
+}
+.j-barCol.colTamQui, .f-barCol.colTamQui, .m-barCol.colTamQui, .a-barCol.colTamQui, .mai-barCol.colTamQui, .jun-barCol.colTamQui{
+    height: 200px;
+}
+
 
