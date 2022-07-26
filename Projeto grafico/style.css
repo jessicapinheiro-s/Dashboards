@@ -117,10 +117,13 @@ body{
 .barra{
     display: flex;
 }
-#j-bar, #f-bar, #m-bar, #a-bar, #mai-bar, #jun-bar, #jul-bar, #ag-bar, #set-bar, #out-bar, #nov-bar, #dez-bar{
+.j-bar, #f-bar, #m-bar, #a-bar, #mai-bar, #jun-bar{
     width: 30px;
     height: 10px;
     color: transparent;
     background: rgb(16, 99, 182);
+}
+.j-bar.colTamDez, #f-bar.colTamDez, #m-bar.colTamDez, #a-bar.colTamDez, #mai-bar.colTamDez, #jun-bar.colTamDez{
+    height: 50px;
 }
 
