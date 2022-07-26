@@ -2,40 +2,83 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --cor-colunas: #8921ff;
+    --cor-fonte-suave: #aaaaaa;
+    --cor-fonte: #ffffff;
+    --bg-body: #181818;
+    --bg-grafico: #212121;
+    --bg-input: #3d3d3d;
+}
 body{ 
     height: 100%;
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+    color: var(--cor-fonte);
+    background: var(--bg-body);
+    background-repeat: none;
+    background-attachment: fixed;
+}
+header{
+    text-align: center;
+    padding: 10px;
+}
+header p{
+    color: var(--cor-fonte-suave);
 }
 .formulario{
     width: 400px;
     margin: auto ;
-    padding: 15px;
-    border: 1px solid #cacaca;
+    padding: 20px;
+    background-color: var(--bg-grafico);
+    border-radius: 8px;
+    margin-top: 50px;
 }
 .formulario .bt{
     text-align: center;
-    margin-top: 15px;
+}
+.formulario #btEnviar{
+    background-color: var(--cor-colunas);
+    border: none;
+    padding: 10px;
+    color: #fff;
+    width: 40%;
+    border-radius: 6px ;
+}
+.formulario #btEnviar:hover{
+    background-color: #9e49ff;
 }
 .form{
-    width: 80%;
-    margin: auto;
     display: flex;
-}
-.form input{
-    width: 20%;
-    margin-bottom: 10px;
-}
-.form .mes, .form .qtd{
-    width: 30%;
-    text-align: center;
-    border: 1px solid #131010;
+    width: 100%;
+    margin: auto;
 }
 .form .qtd input{
-    width: 40px;
-}
-.form .mes input{
+    margin-bottom: 10px;
+    background-color: var(--bg-input);
+    border: none;
+    outline: none;
+    text-align: center;
     width: 60px;
+    height: 30px;
+    color:  var(--cor-fonte);
+}
+.form .qtd input:focus{
+    background-color: var(--bg-input);
+}
+
+.form .mes, .form .qtd {
+    width: 50%;
+    text-align: center;
+}
+.form .mes p, .form .qtd p{
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.form .mes div{
+    margin-bottom: 6px;
 }
 .formulario.esconder{
     display: none;
@@ -45,11 +88,12 @@ body{
 }
 .grafico{
     width:60% ;
+    border-radius: 8px;
     display: none;
     margin: auto;
-    padding: 20px;
-    border-radius: 6px;
-    border: solid 1px #cecece;
+    padding: 10px;
+    background-color: var(--bg-grafico);
+    margin-top: 50px;
 }
 .all-gafico-content{
     width: 100%;
@@ -63,32 +107,37 @@ body{
 }
 .grafico-aside{
     grid-area: aside;
-    background: #1234;
+    background: var(--bg-grafico);
 } 
 .grafico-content{
     grid-area: content;
-    background: #c7ddc7;
+    background: var(--bg-grafico);
     min-height: 220px;
     display: flex;
     align-items: flex-end;
 } 
 .grafico-footer {
     grid-area: footer;
-    background: #ada0b9;
+    background: var(--bg-grafico);
     display: flex;
     align-items: center;
+  
 }
 .grafico-header{
     grid-area: header;
-    background: rgb(224, 217, 188);
+    background: var(--bg-grafico);
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
+
 .title{
     width: 80%;
     margin: auto;
     text-align: center;
 }
-.qtd input{
-    margin-bottom: 18px;
+.title p{
+    color: var(--cor-fonte-suave);
 }
 .numeros {
     width: 100%;
@@ -97,6 +146,9 @@ body{
 }
 .numeros p{
     margin: 15px 0 15px;
+    width: 100%;
+    text-align: center;
+    
 }
 .cidades{
     display: flex;
@@ -117,11 +169,12 @@ body{
 .barra{
     display: flex;
 }
+/*colunas*/
 .j-barCol, .f-barCol, .m-barCol, .a-barCol, .mai-barCol, .jun-barCol{
     width: 30px;
     height: 3px;
     color: transparent;
-    background: #1063b6;
+    background: var(--cor-colunas);
 }
 .j-barCol.colTamDez, .f-barCol.colTamDez, .m-barCol.colTamDez, .a-barCol.colTamDez, .mai-barCol.colTamDez, .jun-barCol.colTamDez{
     height: 6px;
